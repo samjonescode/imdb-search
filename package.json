@@ -1,0 +1,31 @@
+{
+  "name": "node-auth2",
+  "version": "1.0.0",
+  "description": "View and create profile pages.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/penoutlet/Node-Auth2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/penoutlet/Node-Auth2/issues"
+  },
+  "homepage": "https://github.com/penoutlet/Node-Auth2#readme",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "express-handlebars": "^3.0.0",
+    "js-beautify": "^1.6.14",
+    "method-override": "^2.3.9",
+    "morgan": "^1.8.2",
+    "node-todoist-promise": "0.0.1",
+    "nodemailer": "^4.1.0"
+  }
+}
