@@ -7,7 +7,7 @@
       <p class="lead">Enter a title below, with the exact spelling and capitalization as the movie's title.</p>
       <form class="form-inline my-2 my-lg-0" action='/movieresults' method="POST">
         <input class="form-control mr-sm-2" type="text" placeholder="Search" name = 'name' aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Click or Tap to Search</button>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><strong>Click or Tap this, press Enter or Go,  to Search</strong></button>
       </form>
     </div>
   </div>
@@ -50,7 +50,7 @@
     {{#each Ratings}}
     <li class="list-group-item"><strong> 'Ratings: ' </strong> {{Source}} {{Value}} </li>
     {{/each}}
-    <li class="list-group-item" id = 'img-hider'> Hover to see poster.
+    <li class="list-group-item" id = 'img-hider'> <strong>Hover to see poster (unavailble on Mobile)</strong>
       <img class='poster'  src={{Poster}} alt="..." class="img-rounded">
     </li>
 
