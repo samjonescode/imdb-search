@@ -3,11 +3,11 @@
 <div class='row'>
 <div class="jumbotron jumbotron-fluid">
     <div class="container">
-      <h1 class="display-3">IMDB Movie Search</h1>
-      <p class="lead">Enter a title below, with the exact spelling and capitalization as the movie's title.</p>
+      <h1 class="display-3"> <strong> IMDB Movie Search</strong></h1>
+      <p class="lead">Enter a Title Below and Press Enter or Go.</p>
       <form class="form-inline my-2 my-lg-0" action='/movieresults' method="POST">
         <input class="form-control mr-sm-2" type="text" placeholder="Search" name = 'name' aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><strong>Click or Tap this, press Enter or Go,  to Search</strong></button>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><strong> Search </strong></button>
       </form>
     </div>
   </div>
@@ -39,18 +39,18 @@
 
   <ul class="list-group">
 
-    <li class="list-group-item"> <strong> Title: </strong>  {{Title}}</li>
-    <li class="list-group-item"><strong> Year: </strong> {{Year}}</li>
-    <li class="list-group-item"><strong> Actors: </strong> {{Actors}}</li>
-    <li class="list-group-item"><strong> Writers: </strong> {{Writer}}</li>
-    <li class="list-group-item"><strong> Director: </strong> {{Director}}</li>
-    <li class="list-group-item"><strong> Plot: </strong> {{Plot}} </li>
-    <li class="list-group-item"><strong> Awards: </strong> {{Awards}} </li>
-    <li class="list-group-item"><strong> Box Office: </strong> {{BoxOffice}} </li>
+    <li class="list-group-item"> <strong class='cat'> Title: </strong> {{Title}} </li>
+    <li class="list-group-item"><strong class='cat'> Year: </strong> {{Year}}</li>
+    <li class="list-group-item"><strong class='cat'> Actors: </strong> {{Actors}}</li>
+    <li class="list-group-item"><strong class='cat'> Writers: </strong> {{Writer}}</li>
+    <li class="list-group-item"><strong class='cat'> Director: </strong> {{Director}}</li>
+    <li class="list-group-item"><strong class='cat'> Plot: </strong> {{Plot}} </li>
+    <li class="list-group-item"><strong class='cat'> Awards: </strong> {{Awards}} </li>
+    <li class="list-group-item"><strong class='cat'> Box Office: </strong> {{BoxOffice}} </li>
     {{#each Ratings}}
-    <li class="list-group-item"><strong> 'Ratings: ' </strong> {{Source}} {{Value}} </li>
+    <li class="list-group-item"><strong class='cat'> 'Ratings: ' </strong> {{Source}} {{Value}} </li>
     {{/each}}
-    <li class="list-group-item" id = 'img-hider'> <strong>Hover to see poster (unavailble on Mobile)</strong>
+    <li class="list-group-item" id = 'img-hider'> <strong class='cat'>Hover to see poster (unavailble on Mobile)</strong>
       <img class='poster'  src={{Poster}} alt="..." class="img-rounded">
     </li>
 
@@ -60,11 +60,11 @@
 <style>
 .list-group-item{
   color: orange;
-  font-family: 'Special Elite', cursive;
+  font-family: 'Special Elite';
 }
 .jumbotron.jumbotron-fluid {
   background-color: yellow;
-  font-family: 'Special Elite', cursive;
+  font-family: 'Special Elite';
   color: orange;
 }
 body {
@@ -81,6 +81,12 @@ img{
 #img-hider:hover img{
   display:block;
 
+}
+.cat{
+  font-size: 20px;
+}
+.attr{
+  font-size:10px;
 }
 
 </style>
