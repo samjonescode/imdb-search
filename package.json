@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/penoutlet/Node-Auth2#readme",
   "dependencies": {
-    "axios": "^0.16.2",
+    "axios": "^0.18.1",
     "body-parser": "^1.17.2",
     "express": "^4.15.4",
     "express-handlebars": "^3.0.0",
