@@ -33,7 +33,7 @@ app.get('/', (req,res) => {
 });
 app.post('/movieresults', (req,res)=>{
 
-    axios.get('http://www.omdbapi.com/?apikey=2393c630',{
+    axios.get('https://www.omdbapi.com/?apikey=2393c630',{
       params:  {
         t: req.body.name
     }
