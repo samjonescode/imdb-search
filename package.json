@@ -24,7 +24,7 @@
     "express-handlebars": "^3.0.0",
     "js-beautify": "^1.6.14",
     "method-override": "^2.3.9",
-    "morgan": "^1.8.2",
+    "morgan": "^1.9.1",
     "node-todoist-promise": "0.0.1",
     "nodemailer": "^4.1.0"
   }
