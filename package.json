@@ -19,8 +19,8 @@
   "homepage": "https://github.com/penoutlet/Node-Auth2#readme",
   "dependencies": {
     "axios": "^0.16.2",
-    "body-parser": "^1.17.2",
-    "express": "^4.15.4",
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
     "express-handlebars": "^3.0.0",
     "js-beautify": "^1.6.14",
     "method-override": "^2.3.9",
